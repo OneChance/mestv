@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="accessibility_service_name">我的智能安装</string>
+    <string name="accessibility_service_description">智能安装服务，无需用户的任何操作就可以自动安装程序。</string>
+
+    <!-- 登陆 -->
+    <string name="app_version">VERSION:%1$s</string>
+    <string name="app_name">MES</string>
+    <string name="login_out">退出</string>
+    <string name="config_server">配置服务器</string>
+    <string name="server_config">服务器信息配置</string>
+    <string name="server_ip">服务器地址</string>
+    <string name="server_port">端口</string>
+    <string name="config_dismiss">关闭</string>
+    <string name="server_config_error">服务器信息配置有误</string>
+    <string name="server_error">与服务器通信异常</string>
+    <string name="app_downloading">正在下载更新程序......</string>
+    <string name="net_disable">当前无网络</string>
+
+
+    <string name="a_tab_name"> 报表A </string>
+    <string name="b_tab_name"> 报表B </string>
+    <string name="action_settings">设置</string>
+
+</resources>
