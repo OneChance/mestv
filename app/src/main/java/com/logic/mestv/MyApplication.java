@@ -22,7 +22,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         context = getApplicationContext();
-        CrashHandler.getInstance().init(this);
+        //CrashHandler.getInstance().init(this);
         super.onCreate();
     }
 

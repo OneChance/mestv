@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
-import android.widget.TextView;
 
 import com.logic.mestv.MyApplication;
 import com.logic.mestv.R;
@@ -28,14 +27,10 @@ import butterknife.InjectView;
 public class MainActivity extends AppCompatActivity implements IMain {
 
     Activity activity;
-    //@InjectView(R.id.toolbar)
-    //Toolbar toolbar;
     @InjectView(R.id.main_viewpager)
     ViewPager viewPager;
     @InjectView(R.id.main_tabs)
     TabLayout tabLayout;
-    @InjectView(R.id.submit_status)
-    TextView submitStatus;
     MainPresenter mainPresenter;
     private Context context;
     ViewPagerAdapter adapter;
@@ -49,13 +44,12 @@ public class MainActivity extends AppCompatActivity implements IMain {
         context = this;
         activity = this;
 
-        //setSupportActionBar(toolbar);
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         adapter = new ViewPagerAdapter(fragmentManager);
         mainPresenter = new MainPresenter(this, context);
 
         List<Tab> tabs = new ArrayList<>();
+
 
         Tab tabA = new Tab();
         tabA.setCode("a");
@@ -98,7 +92,6 @@ public class MainActivity extends AppCompatActivity implements IMain {
                 adapter.addFrag(tag, getResources().getText(tag.tabName).toString());
             }
         }
-
         viewPager.setAdapter(adapter);
     }
 
@@ -135,14 +128,5 @@ public class MainActivity extends AppCompatActivity implements IMain {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    }
-
-    public void setStatus(String text, boolean success) {
-        if (success) {
-            submitStatus.setTextColor(getResources().getColor(R.color.success));
-        } else {
-            submitStatus.setTextColor(getResources().getColor(R.color.error));
-        }
-        submitStatus.setText(text);
     }
 }
