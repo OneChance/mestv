@@ -18,8 +18,8 @@ import static com.logic.mestv.R.layout.tab_b;
 public class BFragment extends BaseTagFragment {
 
     View view;
-    @InjectView(R.id.open)
-    Button bOpen;
+    @InjectView(R.id.pdf)
+    Button pdf;
 
     public BFragment() {
         this.tabName = R.string.b_tab_name;
@@ -34,7 +34,7 @@ public class BFragment extends BaseTagFragment {
 
         ButterKnife.inject(this, view);
 
-        bOpen.setOnClickListener(new View.OnClickListener() {
+        pdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(BFragment.this.getActivity(), PdfViewActivity.class);

@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.logic.mestv.activity.PdfViewActivity">
+    tools:context="com.logic.mestv.activity.OtherFileViewActivity">
 
-    <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/pdfView"
+    <WebView
+        android:id="@+id/file_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

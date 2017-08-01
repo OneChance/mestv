@@ -12,9 +12,8 @@
         android:text="B" />
 
     <Button
-        android:id="@+id/open"
+        android:id="@+id/pdf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="open" />
-
+        android:text="pdf" />
 </LinearLayout>

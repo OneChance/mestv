@@ -27,6 +27,7 @@ android {
 }
 
 
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.github.barteksc:android-pdf-viewer:2.6.1'
